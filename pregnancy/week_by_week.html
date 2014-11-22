@@ -1,0 +1,104 @@
+<div>
+  <h2><span>Your Baby.... Week By Week</span></h2>
+</div>
+<div class="blog_text">
+  <p>Get a sense of your baby's approximate length and weight from conception to birth with our week-by-week averages.
+  </p>
+</div><br/><br/>
+<div id="svPlayerId" class="lightPlayer">
+  <div class="stage" style="">
+    <div class="slide show">
+      <img id="img1" alt="3 weeks pregnancy" src="images/pregnancy/week_by_week/week3.jpg"
+           class="slide_image">
+      <img alt="5 weeks pregnancy" src="images/pregnancy/week_by_week/week5.jpg"
+           class="slide_image display_none">
+      <img alt="6 weeks pregnancy" src="images/pregnancy/week_by_week/week6.jpg"
+           class="slide_image display_none">
+      <img alt="7 weeks pregnancy" src="images/pregnancy/week_by_week/week7.jpg"
+           class="slide_image display_none">
+      <img alt="8 weeks pregnancy" src="images/pregnancy/week_by_week/week8.jpg"
+           class="slide_image display_none">
+      <img alt="9 weeks pregnancy" src="images/pregnancy/week_by_week/week9.jpg"
+           class="slide_image display_none">
+      <img alt="10 weeks pregnancy" src="images/pregnancy/week_by_week/week10.jpg"
+           class="slide_image display_none">
+      <img alt="11 weeks pregnancy" src="images/pregnancy/week_by_week/week11.jpg"
+           class="slide_image display_none">
+      <img alt="12 weeks pregnancy" src="images/pregnancy/week_by_week/week12.jpg"
+           class="slide_image display_none">
+      <img alt="13 weeks pregnancy" src="images/pregnancy/week_by_week/week13.jpg"
+           class="slide_image display_none">
+      <img alt="15 weeks pregnancy" src="images/pregnancy/week_by_week/week15.jpg"
+           class="slide_image display_none">
+      <img alt="18 weeks pregnancy" src="images/pregnancy/week_by_week/week18.jpg"
+           class="slide_image display_none">
+      <img alt="20 weeks pregnancy" src="images/pregnancy/week_by_week/week20.jpg"
+           class="slide_image display_none">
+      <img alt="23 weeks pregnancy" src="images/pregnancy/week_by_week/week23.jpg"
+           class="slide_image display_none">
+      <img alt="26 weeks pregnancy" src="images/pregnancy/week_by_week/week26.jpg"
+           class="slide_image display_none">
+      <img alt="28 weeks pregnancy" src="images/pregnancy/week_by_week/week28.jpg"
+           class="slide_image display_none">
+      <img alt="31 weeks pregnancy" src="images/pregnancy/week_by_week/week31.jpg"
+           class="slide_image display_none">
+      <img alt="32 weeks pregnancy" src="images/pregnancy/week_by_week/week32.jpg"
+           class="slide_image display_none">
+      <img alt="35 weeks pregnancy" src="images/pregnancy/week_by_week/week35.jpg"
+           class="slide_image display_none">
+      <img alt="39 weeks pregnancy" src="images/pregnancy/week_by_week/week39.jpg"
+           class="slide_image display_none">
+      <img id="img40" alt="40 weeks pregnancy" src="images/pregnancy/week_by_week/week40.jpg"
+           class="slide_image display_none">
+    </div>
+  </div>
+</div>
+<div class="toolbar_wrapper">
+  <div class="toolbar normal">
+    <div class="nav">
+      <button id="first_slide" title="First Slide" class="btnFirst button_small" id="btnFirst">«</button>
+      <button id="prev_slide" title="Previous Slide" class="btnPrevious button_small" id="btnPrevious">‹</button>
+      <button id="next_slide" title="Next Slide" class="btnNext button_small" id="btnNext">›</button>
+      <button id="last_slide" title="Last Slide" class="btnLast button_small" id="btnLast">»</button>
+    </div>
+  </div>
+</div>
+
+<div class="clear"></div>
+
+<script type="text/javascript">
+  var $curr = $( "#img1" );
+  var $prev_slide = $("#prev_slide");
+  var $next_slide = $( "#next_slide");
+
+  $prev_slide.disabled = true;
+
+  $next_slide.click(function() {
+    $prev_slide.disabled = false;
+    $curr.hide('slow');
+    $curr = $curr.next();
+    $curr.show('slow');
+    if($curr.next().prop("tagName")!='IMG')
+      $next_slide.disabled = true;
+  });
+
+  $prev_slide.click(function() {
+    $next_slide.disabled = false;
+    $curr.hide('slow');
+    $curr = $curr.prev();
+    $curr.show('slow');
+    if($curr.prev().prop("tagName")!='IMG')
+      $prev_slide.disabled = true;
+  });
+  $("#first_slide").click(function() {
+    $curr.hide('slow');
+    $curr = $("#img1");
+    $curr.show('slow');
+  });
+
+  $("#last_slide").click(function() {
+    $curr.hide('slow');
+    $curr = $("#img40");
+    $curr.show('slow');
+  });
+</script>
