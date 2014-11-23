@@ -202,13 +202,14 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
     height:43px;
     width:223px;
     text-align:center;
-    background-image:url('images/side-button.jpg');
+    background-image:url('images/side-button.png');
     font-size:24px;
     color:#677205;
     z-index:80;
     text-shadow: 1px 1px #f7fae1;
     line-height:normal;
 }
+.title_bar div{padding-top:5px;}
 .side_box .content {
     z-index:79;
 }
@@ -607,6 +608,7 @@ ul#social li {
     padding:0 6px 0 6px !important;
     border:0 !important;
 }
+ul#social li a img{width:32px;height:32px;border:0px;}
 a.button {
     float: none;
     width: 100px;
