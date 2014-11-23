@@ -735,3 +735,5 @@ ul.gallery {
     background: url('images/note.png') no-repeat;
     padding-top:40px;margin-left:160px;height:250px;width:260px;
 }
+.center{text-align:center;}
+iframe{width:640px; height:390px;}
