@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Rangnath Hospital</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link href="home.css" rel="stylesheet" type="text/css" media="all" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="home.js"></script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="logo">
+                    <img class="hospital_logo" src="images/logo.jpg" alt="Your Happy Family" >
+                    <h1 class="hospital_name">RANGNATH HOSPITAL</h1>
+                    <h2 class="hospital_desc">ACADEMY OF LAPAROSCOPY</h2>
+                    <ul>
+                        <li>Surgical</li>
+                        <li>Maternity</li>
+                        <li>Laparoscopic Surgery center</li>
+                    </ul>
+                     <img class="indumati_logo" src="images/indumati.jpg" alt="Your Happy Family" >
+                </div>
+                <!--end logo-->
+                <div id="menu">
+                    <ul id="navigation">
+                        <li><a href="#" onclick="show('home/index');;" class="active">Home</a></li>
+                        <li><a href="#">Procedures and surgery</a>
+                            <ul class="second-menu">
+                                <li><a href="#" onclick="show('laparoscopy/index');">Laparoscopy</a></li>
+                                <li><a href="#" onclick="show('laparoscopy/appendicitis');">Appendicitis</a></li>
+                                <li><a href="#" onclick="show('laparoscopy/hernia');">Hernia</a></li>
+                                <li><a href="#" onclick="show('laparoscopy/cholecystectomy');">Cholecystectomy</a></li>
+                                <li><a href="#" onclick="show('laparoscopy/cardiomyotomy');">Cardiomyotomy</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Fertility</a>
+                            <ul class="second-menu">
+                                <li><a href="#" onclick="show('laparoscopy/fertility_enhancement');">Fertility Enhancement</a></li>
+                                <li><a href="#" onclick="show('laparoscopy/hysteroscopy');">Hysterectomy</a></li>
+                                <li><a href="#" onclick="show('laparoscopy/myomectomy');">Myomectomy</a></li>
+                                <li><a href="#" onclick="show('laparoscopy/tubal_cannulation');">Tubal Cannulation</a></li>
+                                <li><a href="#" onclick="show('laparoscopy/cyst');">Cyst</a></li>
+                                <li><a href="#" onclick="show('laparoscopy/endometriosis');">Endometriosis</a></li>
+                                <li><a href="#" onclick="show('laparoscopy/tuboplasty');">Tuboplasty</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pregnancy</a>
+                            <ul class="second-menu">
+                                <li><a href="#" onclick="show('pregnancy/week_by_week');">Week By Week</a></li>
+                                <li><a href="#" onclick="show('pregnancy/prenatal');">Prenatal</a></li>
+                                <li><a href="#" onclick="show('pregnancy/infertility');">Infertility</a></li>
+                                <li><a href="#" onclick="show('home/faq');">Questions</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Birth & Beyond</a>
+                            <ul class="second-menu">
+                                <li><a href="#" onclick="show('pregnancy/natural_birth');">Natural Birth</a></li>
+                                <li><a href="#" onclick="show('pregnancy/caesarean');">Cesarean</a></li>
+                                <li><a href="#" onclick="show('pregnancy/exercise');">Exercise</a></li>
+                                <li><a href="#" onclick="show('pregnancy/newborn');">Newborn Care</a></li>
+                                <li><a href="#" onclick="show('pregnancy/postnatal');">Postnatal</a></li>
+                                <li><a href="#" onclick="show('pregnancy/contraception');">Contraception</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Fibroid</a>
+                            <ul class="second-menu">
+                                <li><a href="#" onclick="show('fibroids/fibroid');">What is it?</a></li>
+                                <li><a href="#" onclick="show('fibroids/treatment');">Treatment</a></li>
+                                <li><a href="#" onclick="show('fibroids/why_we');">Why Our Hospital?</a></li>
+                                <li><a href="#" onclick="show('fibroids/faq');">Questions</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Appointments</a>
+                            <ul class="second-menu">
+                                <li><a href="#" onclick="show('home/contact');">Contact</a></li>
+                                <li><a href="#" onclick="show('home/locate');">Location</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About</a>
+                            <ul class="second-menu">
+                                <li><a href="#" onclick="show('home/faculty');">Doctors</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--end menu-->
+            </div>
+            <!--end header-->
+            <div id="content_bg"><div id="content1"></div></div>
+        </div>
+        <div id="footer">
+            <div class="left"> © Rangnath Hospital </div>
+            <div class="right">
+            </div>
+        </div>
+        <!--end footer-->
+        <!--end wrapper-->
+        <script>
+            function showHomeApp() { showHome();return false;} // for onload
+            window.onload=showHomeApp;
+        </script>
+    </body>
+</html>
