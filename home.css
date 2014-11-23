@@ -30,6 +30,7 @@
     padding-top:13px;
 }
 #logo ul li{
+    font:14px/20px "PT Sans",sans-serif;
     background-image: url('images/orange_sq.gif');
     background-repeat: no-repeat;
     background-position: 0px 5px;
