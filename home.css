@@ -739,3 +739,40 @@ ul.gallery {
 }
 .center{text-align:center;}
 iframe{width:640px; height:390px;}
+.fileMap{
+    cursor : pointer !important;
+    height: 165px; width: 225px; margin-top: 10px;
+    border:3px solid grey !important;
+}
+
+
+/* jQuery lightBox plugin - Gallery style */
+#gallery
+{
+    padding: 10px;
+}
+#gallery ul
+{
+    list-style: none;
+}
+#gallery ul li
+{
+    display: inline-block;
+    margin:10px;
+}
+#gallery ul img
+{
+    border: 5px ridge #3e3e3e;
+    border-width: 5px 5px 5px;
+}
+#gallery ul a:hover img
+{
+    border: 5px solid #fff;
+    border-width: 5px 5px 20px;
+    color: #fff;
+}
+#gallery ul a:hover
+{
+    color: #fff;
+}
+#gallery ul li span{display:block;}

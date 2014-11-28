@@ -87,10 +87,15 @@
     </div>
 
     <div class="side_box">
-        <div class="title_bar">We Take Care !</div>
+        <div class="title_bar">Easy to Reach </div>
         <div class="content">
-            <div>
-                <img src="images/logo.jpg" style="height:158px;" alt="Logo">
+            <div id="filemap">
+                <a href="images/file_map.jpg"
+                   title="Map">
+                    <img class="fileMap" src="images/file_map.jpg"
+                         width="200" height="200" alt="Map" />
+                    <span>Map</span>
+                </a>
             </div>
         </div>
     </div>
@@ -108,6 +113,6 @@
 <div class="clear"></div>
 
 <!--end right_column223-->
-
-<!--mades footer stick to the bottom of the design-->
-<!--end content_bg-->
+<script>
+     $("#filemap a").lightBox();
+</script>
