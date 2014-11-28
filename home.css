@@ -200,7 +200,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
 }
 .side_box .title_bar {
     height:43px;
-    width:223px;
+    width:221px;
     text-align:center;
     background-image:url('images/side-button.png');
     font-size:24px;
@@ -741,8 +741,9 @@ ul.gallery {
 iframe{width:640px; height:390px;}
 .fileMap{
     cursor : pointer !important;
-    height: 165px; width: 225px; margin-top: 10px;
+    height: 165px; width: 217px; margin-top: 10px;
     border:3px solid grey !important;
+    border-radius:10px;
 }
 
 
@@ -776,3 +777,11 @@ iframe{width:640px; height:390px;}
     color: #fff;
 }
 #gallery ul li span{display:block;}
+.naturalBirthCenter{
+    background: url('images/indumati_name.jpg') no-repeat;
+    height: 55px;
+    border:2px ridge gray;
+    border-radius:15px;
+}
+#indumatiFacility{padding-left: 20px;padding-right: 20px;}
+#indumatiFacility li{font-weight: bold;border-bottom:1px solid gray;}
