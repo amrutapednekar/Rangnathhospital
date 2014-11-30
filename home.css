@@ -263,7 +263,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
 
 #footer { /*the container that holds the main menu*/
           height:48px;
-          width:941px;
+          width:1220px;
           padding:0px;
           margin:-23px 0 0 20px;
           z-index:101;
@@ -277,6 +277,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
     text-align:right;
     padding:17px 0 0 0;
     margin-right:40px;
+    font-size: 11px;
 }
 #footer .left {
     float:left;
