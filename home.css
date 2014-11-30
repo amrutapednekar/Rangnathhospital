@@ -172,6 +172,7 @@ ul#navigation ul.second-menu a {
     border-bottom:1px solid gray;
     text-transform:none; /*turns off the uppercase*/
 }
+ul#navigation ul.second-menu a.last-menu{border-bottom:none;}
 ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a, ul#navigation ul.second-menu a:hover {
     color:#05a9c5;
 }
