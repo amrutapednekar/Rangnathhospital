@@ -263,11 +263,9 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
 
 #footer { /*the container that holds the main menu*/
           height:48px;
-          width:1220px;
-          padding:0px;
-          margin:-23px 0 0 20px;
+          width:941px;
+          margin:auto;
           z-index:101;
-          position:absolute;
           font-family: 'Delius Swash Caps', cursive;
           font-size:13px;
           color:white;
